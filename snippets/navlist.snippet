@@ -1,0 +1,36 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>bnavlist</Title>
+    <Author>Scott Kirkland</Author>
+    <Shortcut>bnavlist</Shortcut>
+    <Description>Navigation List</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>href</ID>
+        <ToolTip>href</ToolTip>
+        <Default>#</Default>
+      </Literal>
+      <Literal>
+        <ID>header</ID>
+        <ToolTip>header</ToolTip>
+        <Default>header</Default>
+      </Literal>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>name</ToolTip>
+        <Default>name</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[<ul class="nav nav-list">
+  <li class="nav-header">$header$</li>
+  <li class="active"><a href="$href$">$name$</a></li>
+</ul>$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

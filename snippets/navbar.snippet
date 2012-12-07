@@ -1,0 +1,45 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>bnavbar</Title>
+    <Author>Scott Kirkland</Author>
+    <Shortcut>bnavbar</Shortcut>
+    <Description>Navigation Bar</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>href</ID>
+        <ToolTip>href</ToolTip>
+        <Default>href</Default>
+      </Literal>
+      <Literal>
+        <ID>title</ID>
+        <ToolTip>title</ToolTip>
+        <Default>title</Default>
+      </Literal>
+      <Literal>
+        <ID>hrefnav</ID>
+        <ToolTip>hrefnav</ToolTip>
+        <Default>hrefnav</Default>
+      </Literal>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>name</ToolTip>
+        <Default>name</Default>
+      </Literal>      
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="$href$">$title$</a>
+    <ul class="nav">
+      <li class="active"><a href="$hrefnav$">$name$</a></li>
+    </ul>
+  </div>
+</div>$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

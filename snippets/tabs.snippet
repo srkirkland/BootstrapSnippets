@@ -1,0 +1,41 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>btabs</Title>
+    <Author>Scott Kirkland</Author>
+    <Shortcut>btabs</Shortcut>
+    <Description>Navigation Tabs</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>href</ID>
+        <ToolTip>href</ToolTip>
+        <Default>#</Default>
+      </Literal>
+      <Literal>
+        <ID>href2</ID>
+        <ToolTip>href2</ToolTip>
+        <Default>#</Default>
+      </Literal>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>name</ToolTip>
+        <Default>name</Default>
+      </Literal>
+      <Literal>
+        <ID>tab2</ID>
+        <ToolTip>tab2</ToolTip>
+        <Default>tab2</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[<ul class="nav nav-tabs">
+  <li class="active"><a href="$href$">$name$</a></li>
+  <li><a href="$href2$">$tab2$</a></li>
+</ul>$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

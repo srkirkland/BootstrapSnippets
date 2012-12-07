@@ -1,0 +1,29 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>bcgroupval</Title>
+    <Author>Scott Kirkland</Author>
+    <Shortcut>bcgroupval</Shortcut>
+    <Description>Form control group with jquery validation attributes</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>Element</ID>
+        <ToolTip>Element</ToolTip>
+        <Default>Element</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[<div class="control-group">
+            <label class="control-label" for="input$Element$"><strong>$Element$</strong><span class="required">*</span></label>
+            <div class="controls">
+                <input type="text" id="input$Element$" name="input$Element$" placeholder="$Element$" data-val="true" data-val-required="$Element$ Required">
+                <span class="field-validation-valid" data-valmsg-for="input$Element$" data-valmsg-replace="true"></span>
+            </div>
+        </div>$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
