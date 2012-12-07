@@ -1,0 +1,38 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>bdropdown</Title>
+    <Author>Scott Kirkland</Author>
+    <Shortcut>bdropdown</Shortcut>
+    <Description>Toggleable, contextual menu for displaying lists of links</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>button</ID>
+        <ToolTip>Button Name</ToolTip>
+        <Default>Button</Default>
+      </Literal>
+      <Literal>
+        <ID>href</ID>
+        <ToolTip>href</ToolTip>
+        <Default>#</Default>
+      </Literal>
+      <Literal>
+        <ID>action</ID>
+        <ToolTip>Anchor/List Item Name</ToolTip>
+        <Default>Action</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[<div class="btn-group">
+    <button class="btn dropdown-toggle" data-toggle="dropdown">$button$ <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="$href$">$action$</a></li>
+    </ul>
+</div>$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

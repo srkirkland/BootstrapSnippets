@@ -1,0 +1,35 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>bformhorizontal</Title>
+    <Author>Scott Kirkland</Author>
+    <Shortcut>bformhorizontal</Shortcut>
+    <Description>Horizontal Form</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>Field</ID>
+        <ToolTip>Field Name</ToolTip>
+        <Default>Field</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="input$Field$">$Field$</label>
+    <div class="controls">
+      <input type="text" id="input$Field$" placeholder="$Field$">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </div>
+</form>$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
