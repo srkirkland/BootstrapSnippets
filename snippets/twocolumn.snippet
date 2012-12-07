@@ -1,0 +1,37 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>btwocolumn</Title>
+    <Author>Scott Kirkland</Author>
+    <Shortcut>btwocolumn</Shortcut>
+    <Description>Two column HTML grid</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>SideBar</ID>
+        <ToolTip>Bar</ToolTip>
+        <Default>SideBar</Default>
+      </Literal>
+      <Literal>
+        <ID>Body</ID>
+        <ToolTip>Body</ToolTip>
+        <Default>Body</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      $SideBar$
+    </div>
+    <div class="span10">
+      $Body$
+    </div>
+  </div>
+</div>$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
