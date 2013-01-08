@@ -1,22 +1,23 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+.jumbotron {
+    background: #14800a;
+    border-bottom: 1px solid #11650a;
+    padding: 90px 0 48px;
+    text-shadow: 2px 2px 2px #333;
+    color: white;
+}
 
+.hero-unit{
+    background-color: #14800a;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#explanation {
+    padding: 22px 0;
+    text-align: center;
+    background-color: whiteSmoke;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #DDD;
+}

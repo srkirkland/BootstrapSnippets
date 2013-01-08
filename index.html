@@ -11,12 +11,6 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/prettify.css">
         <link rel="stylesheet" href="css/main.css">
@@ -29,7 +23,6 @@
         <![endif]-->
 
         <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -38,46 +31,46 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">Bootstrap Snippets</a>
+                    <a class="brand" href="#home">Bootstrap Snippets</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <!--<li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Integration</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <a href="#snippets" class="dropdown-toggle" data-toggle="dropdown">Snippets <i class="icon-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
+                                    <li><a href="#scaffolding">Scaffolding</a></li>
+                                    <li><a href="#navigation">Navigation</a></li>
                                 </ul>
-                            </li>-->
+                            </li>
+                            <li><a href="#about">About</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="hero-unit">
-                <h1>Bootstrap Snippets for Visual Studio</h1>
-                <p>Free, open source HTML snippets for Twitter Bootstrap that you can use within Visual Studio.</p>                
+        <div id="home" class="jumbotron">
+            <div class="container">
+                <div class="hero-unit">
+                    <h1>Bootstrap Snippets for Visual Studio</h1>
+                    <p>Free, open source HTML snippets for Twitter Bootstrap that you can use within Visual Studio.</p>                
+                </div>
             </div>
-
-            <!--http://boallen.com/htmlentities.html-->
-            <div class="row">
-                <h2>Snippets- Type the snippet and press [tab] to expand</h2>
+        </div>
+        <div id="explanation">
+            <div class="container">
+                <h2>Simply type the snippet in Visual Studio and press [tab] to expand</h2>
+            </div>
+        </div>
+        <!--http://boallen.com/htmlentities.html-->
+        <div class="container">
+            <section id="scaffolding" class="row">
+                <h2 class="page-header">Scaffolding Snippets</h2>
                 <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs">
-                    <li class="nav-header">Scaffolding</li>
-                    <li class="active"><a href="#btemplate" data-toggle="tab">btemplate</a></li>
-                    <li class=""><a href="#btwocolumn" data-toggle="tab">btwocolumn</a></li>
-                    <li class="nav-header">Navigation</li>
-                    <li class=""><a href="#bnavbar" data-toggle="tab">bnavbar</a></li>
+                        <li class="nav-header">Scaffolding</li>
+                        <li class="active"><a href="#btemplate" data-toggle="tab">btemplate</a></li>
+                        <li class=""><a href="#btwocolumn" data-toggle="tab">btwocolumn</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="btemplate">
@@ -100,12 +93,12 @@
 &lt;/body&gt;
 &lt;/html&gt;</pre>
                         </div>
-                    <div class="tab-pane" id="btwocolumn">
-                        <div class="well">
-                            <p><strong>btwocolumn</strong>: Create a fluid two-column page</p>
-                            <p class="pull-right"><a href="http://twitter.github.com/bootstrap/scaffolding.html#layouts">http://twitter.github.com/bootstrap/scaffolding.html#layouts</a></p>
-                        </div>
-                        <pre class="prettyprint">
+                        <div class="tab-pane" id="btwocolumn">
+                            <div class="well">
+                                <p><strong>btwocolumn</strong>: Create a fluid two-column page</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/scaffolding.html#layouts">http://twitter.github.com/bootstrap/scaffolding.html#layouts</a></p>
+                            </div>
+                            <pre class="prettyprint">
 &lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row-fluid&quot;&gt;
         &lt;div class=&quot;span2&quot;&gt;
@@ -116,35 +109,46 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
-                    </div>
-                    <div class="tab-pane" id="bnavbar">
-                        <div class="well">
-                            <p><strong>bnavbar</strong>: Basic navigation bar with a title and links</p>
-                            <p class="pull-right"><a href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter.github.com/bootstrap/components.html#navbar</a></p>
-                        </div>
-                        <pre class="prettyprint">
-&lt;div class=&quot;navbar&quot;&gt;
-  &lt;div class=&quot;navbar-inner&quot;&gt;
-    &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Title&lt;/a&gt;
-    &lt;ul class=&quot;nav&quot;&gt;
-      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#nav&quot;&gt;Name&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</pre>
-                    <div class="well">
-                        <div class="navbar">
-                          <div class="navbar-inner">
-                            <a class="brand" href="#">Title</a>
-                            <ul class="nav">
-                              <li class="active"><a href="#">Name</a></li>
-                            </ul>
-                          </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section id="navigation" class="row">
+                <h2 class="page-header">Navigation Snippets</h2>
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-header">Navigation</li>
+                        <li class="active"><a href="#bnavbar" data-toggle="tab">bnavbar</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bnavbar">
+                            <div class="well">
+                                <p><strong>bnavbar</strong>: Basic navigation bar with a title and links</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/components.html#navbar">http://twitter.github.com/bootstrap/components.html#navbar</a></p>
+                            </div>
+                            <pre class="prettyprint">
+    &lt;div class=&quot;navbar&quot;&gt;
+      &lt;div class=&quot;navbar-inner&quot;&gt;
+        &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Title&lt;/a&gt;
+        &lt;ul class=&quot;nav&quot;&gt;
+          &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#nav&quot;&gt;Name&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</pre>
+                            <div class="well">
+                                <div class="navbar">
+                                    <div class="navbar-inner">
+                                        <a class="brand" href="#">Title</a>
+                                        <ul class="nav">
+                                        <li class="active"><a href="#">Name</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
+            </section>
             <hr>
 
             <footer>
