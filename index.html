@@ -122,11 +122,14 @@
                 <h2 class="page-header"><i class="icon-sitemap"></i> Navigation Snippets</h2>
                 <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs">
-                        <li class="nav-header">Navigation</li>
+                        <li class="nav-header">Nav Bar</li>                        
                         <li class="active"><a href="#bnavbar" data-toggle="tab">bnavbar</a></li>
-                        <li><a href="#bnavlist" data-toggle="tab">bnavlist</a></li>                        
-                        <li><a href="#bnavtabs" data-toggle="tab">bnavtabs</a></li>
+                        <li class="nav-header">Navigation</li>
+                        <li><a href="#bnavlist" data-toggle="tab">bnavlist</a></li>
+                        <li><a href="#btabs" data-toggle="tab">btabs</a></li>
                         <li><a href="#bpills" data-toggle="tab">bpills</a></li>
+                        <li class="nav-header">Dynamic</li>
+                        <li><a href="#bnavtabs" data-toggle="tab">bnavtabs</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="bnavbar">
@@ -154,6 +157,25 @@
                                         </ul>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="btabs">
+                            <div class="well">
+                                <p><strong>btabs</strong>: Navigation with tabs</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/components.html#navs">http://twitter.github.com/bootstrap/components.html#navs</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;name&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;tab2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#">name</a></li>
+                                    <li><a href="#">tab2</a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="tab-pane" id="bnavlist">
