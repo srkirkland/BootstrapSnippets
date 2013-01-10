@@ -269,7 +269,7 @@
                         <li class="active"><a href="#bform" data-toggle="tab">bform</a></li>
                         <li><a href="#bformsearch" data-toggle="tab">bformsearch</a></li>
                         <li><a href="#bforminline" data-toggle="tab">bforminline</a></li>
-                        <li><a href="#bformhorizontal" data-toggle="tab">bformhorizontal!</a></li>
+                        <li><a href="#bformhorizontal" data-toggle="tab">bformhorizontal</a></li>
                         <li class="nav-header">Controls</li>
                         <li><a href="#bcontrolgroup" data-toggle="tab">bcontrolgroup!</a></li>
                         <li><a href="#bcontrolgroupval" data-toggle="tab">bcontrolgroupval!</a></li>
@@ -340,6 +340,43 @@
                                 <form class="form-inline">
                                     <input type="text" class="input-small">
                                     <button type="submit" class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="bformhorizontal">
+                            <div class="well">
+                                <p><strong>bformhorizontal</strong>: Right align labels and float them to the left to make them appear on the same line as controls</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/base-css.html#forms">http://twitter.github.com/bootstrap/base-css.html#forms</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;form class=&quot;form-horizontal&quot;&gt;
+    &lt;div class=&quot;control-group&quot;&gt;
+        &lt;label class=&quot;control-label&quot; for=&quot;inputName&quot;&gt;Name&lt;/label&gt;
+        &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;inputName&quot; placeholder=&quot;Name&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;control-group&quot;&gt;
+        &lt;div class=&quot;controls&quot;&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <form class="form-horizontal">
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputName">Name</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputName" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn">Submit</button>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
