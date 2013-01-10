@@ -266,7 +266,7 @@
                 <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs">
                         <li class="nav-header">Forms</li>
-                        <li class="active"><a href="#bform" data-toggle="tab">bform!</a></li>
+                        <li class="active"><a href="#bform" data-toggle="tab">bform</a></li>
                         <li><a href="#bformsearch" data-toggle="tab">bformsearch!</a></li>
                         <li><a href="#bforminline" data-toggle="tab">bforminline!</a></li>
                         <li><a href="#bformhorizontal" data-toggle="tab">bformhorizontal!</a></li>
@@ -275,6 +275,37 @@
                         <li><a href="#bcontrolgroupval" data-toggle="tab">bcontrolgroupval!</a></li>
                         <li><a href="#bformactions" data-toggle="tab">bformactions!</a></li>
                     </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bform">
+                            <div class="well">
+                                <p><strong>bform</strong>: Default form with stacked, left-aligned labels on top of form controls.</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/base-css.html#forms">http://twitter.github.com/bootstrap/base-css.html#forms</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Legend&lt;/legend&gt;
+        &lt;label&gt;Label name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Type something&quot;&gt;
+        &lt;span class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/span&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <form>
+                                    <fieldset>
+                                        <legend>Legend</legend>
+                                        <label>Label name</label>
+                                        <input type="text" placeholder="Type something">
+                                        <span class="help-block">Example block-level help text here.</span>
+                                        <button type="submit" class="btn">Submit</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>                
                 </div>
             </section>
             <hr>
