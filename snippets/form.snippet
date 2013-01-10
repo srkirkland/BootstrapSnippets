@@ -15,11 +15,29 @@
         <ToolTip>Legend</ToolTip>
         <Default>Legend</Default>
       </Literal>
+      <Literal>
+        <ID>Label</ID>
+        <ToolTip>Label</ToolTip>
+        <Default>Label name</Default>
+      </Literal>
+      <Literal>
+        <ID>Placeholder</ID>
+        <ToolTip>Placeholder</ToolTip>
+        <Default>Type something</Default>
+      </Literal>
+      <Literal>
+        <ID>HelpBlock</ID>
+        <ToolTip>Help Block</ToolTip>
+        <Default>Example block-level help text here.</Default>
+      </Literal>
     </Declarations>
     <Code Language="html">
       <![CDATA[<form>
   <fieldset>
-    <legend>$Legend$</legend>$end$
+    <legend>$Legend$</legend>
+    <label>$Label$</label>
+    <input type="text" placeholder="$Placeholder$">
+    <span class="help-block">$HelpBlock$</span>$end$
     <button type="submit" class="btn">Submit</button>
   </fieldset>
 </form>]]>
