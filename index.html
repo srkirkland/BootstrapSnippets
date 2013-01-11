@@ -39,10 +39,12 @@
                             <li class="dropdown">
                                 <a href="#snippets" class="dropdown-toggle" data-toggle="dropdown">Snippets <i class="icon-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#scaffolding">Scaffolding</a></li>
-                                    <li><a href="#navigation">Navigation</a></li>
                                     <li><a href="#forms">Forms</a></li>
+                                    <li><a href="#navigation">Navigation</a></li>
+                                    <li><a href="#scaffolding">Scaffolding</a></li>                                    
                                     <li><a href="#tables">Tables</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#misc">Miscellaneous</a></li>
                                 </ul>
                             </li>
                             <li><a href="#about">About</a></li>
@@ -518,6 +520,57 @@
                                   </tbody>
                                 </table>
                             </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section id="misc" class="row">
+                <h2 class="page-header"><i class="icon-table"></i> Miscellaneous Snippets <small>To be organized later</small></h2>
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-header">Components</li>
+                        <li class="active"><a href="#bdropdown" data-toggle="tab">bdropdown</a></li>
+                        <li class="nav-header">Typography</li>
+                        <li><a href="#blead" data-toggle="tab">blead</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bdropdown">
+                            <div class="well">
+                                <p><strong>bdropdown</strong>: Styles a button which triggers a dropdown menu</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/components.html#buttonDropdowns">http://twitter.github.com/bootstrap/components.html#buttonDropdowns</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown">Button <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br/><br/>
+                        </div>
+                        <div class="tab-pane" id="blead">
+                            <div class="well">
+                                <p><strong>blead</strong>: Make a paragraph stand out</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/base-css.html#typography">http://twitter.github.com/bootstrap/base-css.html#typography</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;p class=&quot;lead&quot;&gt;&lt;/p&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <p class="lead">This is lead text</p>
+                            </div>
+                            <br/><br/>
                         </div>
                     </div>
                 </div>            
