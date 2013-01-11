@@ -271,9 +271,9 @@
                         <li><a href="#bforminline" data-toggle="tab">bforminline</a></li>
                         <li><a href="#bformhorizontal" data-toggle="tab">bformhorizontal</a></li>
                         <li class="nav-header">Controls</li>
-                        <li><a href="#bcontrolgroup" data-toggle="tab">bcontrolgroup!</a></li>
-                        <li><a href="#bcontrolgroupval" data-toggle="tab">bcontrolgroupval!</a></li>
-                        <li><a href="#bformactions" data-toggle="tab">bformactions!</a></li>
+                        <li><a href="#bcgroup" data-toggle="tab">bcgroup</a></li>
+                        <li><a href="#bcgroupval" data-toggle="tab">bcgroupval</a></li>
+                        <li><a href="#bformactions" data-toggle="tab">bformactions</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="bform">
@@ -376,6 +376,79 @@
                                         <div class="controls">
                                             <button type="submit" class="btn">Submit</button>
                                         </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="bcgroup">
+                            <div class="well">
+                                <p><strong>bcgroup</strong>: Control group for use inside of horizontal forms</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/base-css.html#forms">http://twitter.github.com/bootstrap/base-css.html#forms</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;div class=&quot;control-group&quot;&gt;
+    &lt;label class=&quot;control-label&quot; for=&quot;inputName&quot;&gt;Name&lt;/label&gt;
+    &lt;div class=&quot;controls&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;inputName&quot; placeholder=&quot;Name&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <form class="form-horizontal">
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputName">Name</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputName" placeholder="Name">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="bcgroupval">
+                            <div class="well">
+                                <p><strong>bcgroupval</strong>: Control group with required validation attributes, for use in horizontal forms</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/base-css.html#forms">http://twitter.github.com/bootstrap/base-css.html#forms</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;div class=&quot;control-group&quot;&gt;
+    &lt;label class=&quot;control-label&quot; for=&quot;inputName&quot;&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+    &lt;div class=&quot;controls&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;inputName&quot; name=&quot;inputName&quot; placeholder=&quot;Name&quot; data-val=&quot;true&quot; data-val-required=&quot;Name Required&quot;&gt;
+        &lt;span class=&quot;field-validation-valid&quot; data-valmsg-for=&quot;inputName&quot; data-valmsg-replace=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <form class="form-horizontal">
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputName"><strong>Name</strong><span class="required">*</span></label>
+                                        <div class="controls">
+                                            <input type="text" id="inputName" name="inputName" placeholder="Name" data-val="true" data-val-required="Name Required">
+                                            <span class="field-validation-valid" data-valmsg-for="inputName" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="bformactions">
+                            <div class="well">
+                                <p><strong>bformactions</strong>: Submit and Cancel buttons for the end of a form</p>
+                                <p class="pull-right"><a href="http://twitter.github.com/bootstrap/base-css.html#forms">http://twitter.github.com/bootstrap/base-css.html#forms</a></p>
+                            </div>
+                            <div class="example-code">
+                                <pre class="prettyprint">
+&lt;div class=&quot;form-actions&quot;&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;</pre>
+                            </div>                            
+                            <div class="example-results">
+                                <form class="form-horizontal">
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn">Cancel</button>
                                     </div>
                                 </form>
                             </div>
